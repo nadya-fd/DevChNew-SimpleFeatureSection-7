@@ -19,7 +19,7 @@ body {
   height: 100vh;
   background: #121826 url('resources/Background_image@2x.png') center no-repeat;
   background-size: cover;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.1px;
 }
 
 header {
