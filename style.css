@@ -4,37 +4,93 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Outfit';
+  src: url(resources/Outfit-VariableFont_wght.ttf);
+}
+
 body {
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  color: #e5e7eb;
   height: 100vh;
-  background: #121826 url('Background_image.svg') no-repeat fixed center;
+  background: #121826 url('resources/Background_image@2x.png') center no-repeat;
+  background-size: cover;
+  letter-spacing: 0.3px;
 }
 
 header {
   margin: 48px 0px;
+  text-align: center;
+  max-width: 471px;
 }
 
 .title {
   margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.titleDescription {
+  color: #9da3ae;
 }
 
 main {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 48px;
 }
 
-.author-info {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 16px;
-  color: rgb(55, 65, 81);
+.icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: 25px;
 }
 
-.author-info a {
-  text-decoration: none;
+.iconOne {
+  background-color: #fceed8;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+
+.iconTwo {
+  background-color: #dee9fc;
+  padding-top: 7px;
+  padding-left: 14px;
+}
+
+.iconThree {
+  background-color: #fbe5e6;
+  padding-top: 11px;
+  padding-left: 13px;
+}
+
+section {
+  padding: 24px;
+  background-color: #212936;
+  max-width: 316px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.supTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.description {
+  color: #d2d5da;
+}
+
+.img {
+  border-radius: 16px;
 }
